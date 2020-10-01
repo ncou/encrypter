@@ -31,12 +31,5 @@
         "phplint": "phplint --ansi",
         "check-style": "phpcs src tests",
         "fix-style": "phpcbf src tests"
-    },
-    "extra": {
-        "chiron": {
-            "bootloaders": [
-                "Chiron\\Encrypter\\Bootloader\\PublishEncrypterBootloader"
-            ]
-        }
     }
 }
