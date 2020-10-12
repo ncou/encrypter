@@ -183,7 +183,6 @@ class Cryptor
     private static function assertKeyLength(string $key): void
     {
         if (self::strlen($key) !== self::KEY_BYTE_SIZE) {
-            // TODO : use this message : 'Invalid key for %s, key must be at least 256 bits (32 bytes) long.'
             throw new InvalidArgumentException(sprintf('Bad key length [expecting %d bytes].', self::KEY_BYTE_SIZE));
         }
     }
