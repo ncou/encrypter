@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Encrypter;
 
-use Chiron\Config\SecurityConfig;
+use Chiron\Security\Config\SecurityConfig;
 use Throwable;
 use RuntimeException;
 
@@ -29,7 +29,7 @@ final class Encrypter
         $this->key = $config->getRawKey();
     }
 
-     /**
+    /**
      * Encrypts $value
      *
      * @param string|array $value Value to encrypt
