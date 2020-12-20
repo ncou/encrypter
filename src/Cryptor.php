@@ -14,7 +14,7 @@ use RuntimeException;
  * It uses OpenSSL extension with AES-256 cipher for encryption and HMAC-SHA-256 for hash.
  * The encryption key and authentification key are both derivated from the original key.
  */
-class Cryptor
+final class Cryptor
 {
     public const CIPHER_METHOD = 'aes-256-ctr';
     public const HASH_FUNCTION_NAME = 'sha256';
@@ -188,7 +188,7 @@ class Cryptor
     }
 
     /**
-     * Generate a keyed hash value using the HMAC method.
+     * Generate a keyed binary hash value using the HMAC method.
      *
      * @param string $data Data to hash
      * @param string $key  Key to use to authenticate the hash.
